@@ -1,6 +1,8 @@
 FROM ruby:3.1
 
-RUN apt update -qq && apt install -y postgresql-client
+RUN apt update -qq \ 
+&& apt install -y postgresql-client nodejs npm \
+&& npm install -g yarn
 RUN mkdir /myapp
 WORKDIR /myapp
 COPY Gemfile /myapp/Gemfile
