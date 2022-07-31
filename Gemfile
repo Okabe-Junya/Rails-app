@@ -1,9 +1,8 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+# Base
 ruby "3.1.2"
-
-# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
@@ -26,6 +25,12 @@ gem "stimulus-rails"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
+
+# view
+gem "bootstrap"
+gem "jquery-rails"
+gem "popper_js"
+gem "tether-rails"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -62,6 +67,12 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+
+  gem "better_errors", require: false
+  gem "binding_of_caller", require: false
+  gem "rubocop", require: false
+
+  gem "annotate"
 end
 
 group :test do
