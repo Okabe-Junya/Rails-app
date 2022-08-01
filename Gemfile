@@ -84,6 +84,6 @@ group :test do
   gem 'webdrivers'
 
   gem 'database_cleaner'
-  gem 'factory_girl_rails'
+  gem 'factory_bot'
   gem 'rspec-rails'
 end
