@@ -1,7 +1,7 @@
 FROM ruby:3.1
 
 RUN apt update -qq \ 
-&& apt install -y postgresql-client nodejs npm \
+&& apt install -y postgresql-client nodejs npm redis\
 && npm install -g yarn
 RUN mkdir /myapp
 WORKDIR /myapp
